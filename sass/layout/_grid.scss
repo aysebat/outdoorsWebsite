@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: eee;
     margin: 0 auto;
 
     //choose the everytoing except the last child
@@ -11,7 +10,6 @@
     @include clearfix
 
    .col {
-        background-color: orangered;
         float: left;
 
         &:not(:last-child) {
