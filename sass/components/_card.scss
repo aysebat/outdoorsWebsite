@@ -23,14 +23,20 @@
             background-color: $color-white;
         }
 
-
         &--back {
             transform: rotateY(180deg);
 
             &-1 {
                 background-image: linear-gradient(to right bottom,
                 $color-yellow-ligh, $color-yellow-dark);
-
+            }
+            &-2 {
+                background-image: linear-gradient(to right bottom,
+                $primary-green-trans, $second-green-trans);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom,
+                $color-blue-ligh, $color-blue-dark);
             }
         }
     }
@@ -54,7 +60,17 @@
         &--1 {
             background-image: linear-gradient(to right bottom,
             $color-yellow-ligh, $color-yellow-dark), url(../img/nat-5.jpg);
-        }    
+        } 
+        
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            $primary-green-trans, $second-green-trans), url(../img/nat-6.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+            $color-blue-ligh, $color-blue-dark), url(../img/nat-7.jpg);
+        }
     }
 
     &__heading {
@@ -78,6 +94,16 @@
             background-image: linear-gradient(to right bottom,
             rgba($color-yellow-ligh,0.85), rgba($color-yellow-dark, 0.85));
         }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            rgba($primary-green-trans,0.85), rgba($second-green-trans, 0.85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-blue-ligh,0.85), rgba($color-blue-dark, 0.85));
+        }
     }
 
     &__details {
@@ -100,4 +126,30 @@
             }
         }
     }
+    &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    &__price-box {
+        text-align: center;
+        margin: 6rem;
+        color: $color-white;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
 }
+
